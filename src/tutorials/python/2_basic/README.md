@@ -286,10 +286,12 @@ You can see the complete example client in [`./route_guide/route_guide_client.py
 
 1. Run the gRPC server, which will listen on port `50051`
     ```bash
+    # Make sure your current directory is "./2_basic/route_guide/"
     $ python route_guide_server.py
     ```
 2. Run the client in another terminal
     ```bash
+    # Make sure your current directory is "./2_basic/route_guide/"
     $ python route_guide_client.py
     ```
 
