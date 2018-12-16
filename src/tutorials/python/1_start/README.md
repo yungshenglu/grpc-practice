@@ -45,7 +45,7 @@ We are going to install gRPC in this tutorial.
         ```
 
 ---
-## 1.2 Download the example (optional)
+## 1.2 Download the example code (optional)
 
 You will need a local copy of the example code to work through this quickstart. However, we have already prepared in this directory ([`helloworld/`](helloworld/)). If you want to do it by yourself, you can run the commands as follow.
 
@@ -62,7 +62,7 @@ You will need a local copy of the example code to work through this quickstart. 
 ---
 ## 1.3 Run a gRPC application
 
-Make sure your current directory is in [`helloworld/`](helloworld/) or in your downloaded repository.
+Make sure your current directory is in [`./helloworld/`](helloworld/) or in your downloaded repository.
 
 1. Run the server in one terminal
     ```bash
@@ -104,7 +104,7 @@ message HelloReply {
 
 1. Copy the file [`./protos/helloworld.proto`](protos/helloworld.proto) to `./protos/helloworld2.proto`
     ```bash
-    # Make sure your current directory is "./1_start/protos"
+    # Make sure your current directory is "./1_start/protos/"
     $ cp helloworld.proto helloworld2.proto
     ```
 2. Update the file `./protos/helloworld2.proto` with a new `SayHelloAgain` method as follow:
@@ -135,7 +135,7 @@ Next we need to update the gRPC code used by our application to use the new serv
 
 1. Update the gRPC code as follow:
     ```bash
-    # Make sure your current directory is "1_start"
+    # Make sure your current directory is "./1_start/"
     $ python -m grpc_tools.protoc -I./protos --python_out=./helloworld/ --grpc_python_out=./helloworld/ ./protos/helloworld2.proto
     ```
 2. It will regenerate `helloworld_pb2.py` and `helloworld_pb2_grpc.py` in directory `./helloworld/`
@@ -149,7 +149,7 @@ We now have new generated server and client code, but we still need to implement
 
 1. Copy the file [`./helloworld/greeter_server.py`](helloworld/greeter_server.py) to `./helloworld/greeter_server2.py`
     ```bash
-    # Make sure your current directory is "./1_start/helloworld"
+    # Make sure your current directory is "./1_start/helloworld/"
     $ cp greeter_server.py greeter_server2.py
     ```
 2. Update the server `./helloworld/greeter_server2.py` as follow:
@@ -181,7 +181,7 @@ We now have new generated server and client code, but we still need to implement
     ```
 3. Copy the file [`./helloworld/greeter_client.py`](helloworld/greeter_client.py) to `./helloworld/greeter_client2.py`
     ```bash
-    # Make sure your current directory is "./1_start/helloworld"
+    # Make sure your current directory is "./1_start/helloworld/"
     $ cp greeter_client.py greeter_client2.py
     ```
 4. Update the server `./helloworld/greeter_client2.py` as follow:
@@ -196,10 +196,10 @@ We now have new generated server and client code, but we still need to implement
     # of the code.
     with grpc.insecure_channel('localhost:50051') as channel:
         stub = helloworld2_pb2_grpc.GreeterStub(channel)
-        response = stub.SayHello(helloworld2_pb2.HelloRequest(name='you'))
+        response = stub.SayHello(helloworld2_pb2.HelloRequest(name='NSS'))
         print("Greeter client received: " + response.message)
         # Update the client here!
-        response = stub.SayHelloAgain(helloworld2_pb2.HelloRequest(name='you'))
+        response = stub.SayHelloAgain(helloworld2_pb2.HelloRequest(name='NSS'))
         print("Greeter client received: " + response.message)
     ```
 5. Run the server `greeter_server2.py` in one terminal
@@ -221,6 +221,7 @@ We now have new generated server and client code, but we still need to implement
 
 * [gRPC Official Website](https://grpc.io/)
 * [Protocol Buffers Documentation](https://developers.google.com/protocol-buffers/docs/overview)
+* [Protocol Buffers 3 Language Guide](https://developers.google.com/protocol-buffers/docs/proto3)
 * [GitHub - grpc/grpc](https://github.com/grpc/grpc)
 * [GitHub - google/protobuf](https://github.com/google/protobuf/releases)
 

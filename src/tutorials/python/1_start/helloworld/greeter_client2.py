@@ -27,10 +27,10 @@ def run():
     # of the code.
     with grpc.insecure_channel('localhost:50051') as channel:
         stub = helloworld2_pb2_grpc.GreeterStub(channel)
-        response = stub.SayHello(helloworld2_pb2.HelloRequest(name='you'))
+        response = stub.SayHello(helloworld2_pb2.HelloRequest(name='NSS'))
         print("Greeter client received: " + response.message)
         # Update the client here!
-        response = stub.SayHelloAgain(helloworld2_pb2.HelloRequest(name='you'))
+        response = stub.SayHelloAgain(helloworld2_pb2.HelloRequest(name='NSS'))
         print("Greeter client received: " + response.message)
 
 
