@@ -8,9 +8,9 @@ I'd love to accept your patches and contributions to this project. There are jus
 1. Fork this repository and clone the repository you forked.
     ```bash
     # Clone your fork of the repo into the current directory
-    git clone https://github.com/<your-username>/grpc-practice
+    git clone https://github.com/<YOUR_GITHUB_ID>/grpc-practice
     # Navigate to the newly cloned directory
-    cd <repo-name>
+    cd <REPO_NAME>
     ```
 2. Create new branch named `develop` and switch to this branch
     ```bash
