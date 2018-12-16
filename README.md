@@ -87,4 +87,4 @@ In order to protect both you and ourselves, you will need to sign the [Contribut
 ---
 ## License
 
-ONOS (Open Network Operating System) is published under Apache License 2.0
+[Apache License 2.0](LICENSE)
