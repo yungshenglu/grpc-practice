@@ -68,6 +68,7 @@ By default gRPC uses "[Protocol Buffers](https://developers.google.com/protocol-
 
 * [gRPC Official Website](https://grpc.io/)
 * [Protocol Buffers Documentation](https://developers.google.com/protocol-buffers/docs/overview)
+* [Protocol Buffers 3 Language Guide](https://developers.google.com/protocol-buffers/docs/proto3)
 * [GitHub - grpc/grpc](https://github.com/grpc/grpc)
 * [GitHub - google/protobuf](https://github.com/google/protobuf/releases)
 
