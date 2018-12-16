@@ -8,6 +8,7 @@ This directory is used for practicing gRPC in Python.
 ## Contents
 
 1. [Quick Start](1_start/)
+2. [gRPC Basics in Python](2_basic/)
 
 (To be updated.)
 
@@ -16,6 +17,7 @@ This directory is used for practicing gRPC in Python.
 
 * [gRPC Official Website](https://grpc.io/)
 * [Protocol Buffers Documentation](https://developers.google.com/protocol-buffers/docs/overview)
+* [Protocol Buffers 3 Language Guide](https://developers.google.com/protocol-buffers/docs/proto3)
 * [GitHub - grpc/grpc](https://github.com/grpc/grpc)
 * [GitHub - google/protobuf](https://github.com/google/protobuf/releases)
 
