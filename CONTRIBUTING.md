@@ -1,6 +1,6 @@
-# Contributing
+# How to Contribute
 
-Thanks for contributing *grpc-practice*. The following steps are show how to contribute to *grpc-practice*. Please read the following content before contributing. Thanks for your cooperation.
+I'd love to accept your patches and contributions to this project. There are just a few small guidelines you need to follow. Please read the following content before contributing. Thanks for your cooperation.
 
 ## About Pull Requests
 
